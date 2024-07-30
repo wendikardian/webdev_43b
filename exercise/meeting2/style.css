@@ -1,0 +1,46 @@
+h1 {
+    color: rgb(240, 152, 29);
+    background-color: black;
+    margin: 100px;
+    padding: 50px;
+    border: 5px solid rgb(107, 202, 39);
+    border-radius: 100px;
+}   
+
+h2{
+    background-color:  darkblue;
+    color: white;
+}
+
+/* 
+.main-header {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+
+p.info{
+    color: rgb(240, 29, 212);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-radius: 30px;
+} */
+/* 
+h2#welcome { 
+    color: rgb(240, 152, 29);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-radius: 30px;
+} */
+
+/* p{
+    color : cyan;
+    font-size: 20px !important;
+} */
