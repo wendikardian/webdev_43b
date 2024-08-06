@@ -94,11 +94,16 @@ this is my website for practice
             <h2>Pricing Table</h2>
             <table>
                 <tr>
-                    <th>No</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Image</th>
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Name</th>
+                    <th colspan="3">Description</th>
+                    <th rowspan="2">Price</th>
+                    <th rowspan="2">Image</th>
+                </tr>
+                <tr>
+                    <th>Level</th>
+                    <th>Information</th>
+                    <th>Focus</th>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -108,6 +113,20 @@ this is my website for practice
                             <li>Beginner</li>
                             <li>Intermediate</li>
                             <li>Advanced</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>Fullstack</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
                         </ul>
                     </td>
                     <td>$100</td>
@@ -123,6 +142,20 @@ this is my website for practice
                             <li>Advanced</li>
                         </ul>
                     </td>
+                    <td>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Data Science</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>Django</li>
+                        </ul>
+                    </td>
                     <td>$150</td>
                     <td><img src="assets/python.png" alt="" class="img-product"></td>
                 </tr>
@@ -136,8 +169,49 @@ this is my website for practice
                             <li>Advanced</li>
                         </ul>
                     </td>
+                    <td>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Microservices</li>
+                            <li>Cloud Computing</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Golang</li>
+                            <li>REST API</li>
+                            <li>GRPC</li>
+                        </ul>
+                    </td>
                     <td>$200</td>
                     <td><img src="assets/golang.png" alt="" class="img-product"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Course C++</td>
+                    <td>
+                        <ul>
+                            <li>Beginner</li>
+                            <li>Intermediate</li>
+                            <li>Advanced</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Game Development</li>
+                            <li>System Programming</li>
+                            <li>Embedded System</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>C++</li>
+                            <li>STL</li>
+                            <li>Boost</li>
+                        </ul>
+                    </td>
+                    <td>$250</td>
+                    <td><img src="assets/cpp.png" alt="" class="img-product"></td>
                 </tr>
             </table>
         </div>
