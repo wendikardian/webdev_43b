@@ -5,16 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #div {
+            overflow: scroll;
+            width: 250px;
+            height: 200px;
+        }
+    </style>
 </head>
 
-<body>
+<body
+    onkeypress="keypress()">
+
     <img src="https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif" alt="Code" width="100" height="auto"
-        onmouseover="rotateGif(this)"
-        onmouseout="rotateBack(this)"
-        onclick="alert('Hello World!')"
+        onmouseover="rotateGif(this)" onmouseout="rotateBack(this)" 
+        
+        id="img"
         >
 
+
+    <div id="div" onscroll="scrolling()">
+        <h3>Bagaimana membedakan HTML, CSS, dan Javascript pada website?</h3>
+
+        <p>HTML, CSS, dan Javascript bisa di analogikan sebagai tubuh manusia.
+            HTML adalah kerangka tubuh, CSS adalah pakaian atau aksesoris yang digunakan, dan Javascript
+            adalah sel saraf yang membuat manusia bisa bergerak dan berinteraksi</p>
+    </div>
+
     <script>
+
+        var imgData = document.getElementById("img")
+        imgData.addEventListener("click", function() {
+            alert("You clicked the image!")
+        })
+
         function rotateGif(element) {
             element.style.transform = "translate(5px, 5px)";
             element.style.transform = "rotate(180deg)"
@@ -24,6 +48,17 @@
         function rotateBack(element) {
             element.style.transform = "translate(-5px, -5px)";
             element.style.transform = "rotate(0deg)"
+        }
+
+        function scrolling() {
+            document.getElementById("div").style.color = "blue";
+        }
+
+
+        function keypress() {
+            var content = document.getElementById("div")
+            content.innerHTML = "You pressed a key!"
+            content.style.color = "red"
         }
     </script>
 
