@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif" alt="Code" width="100" height="auto"
+        onmouseover="rotateGif(this)"
+        onmouseout="rotateBack(this)"
+        onclick="alert('Hello World!')"
+        >
+
+    <script>
+        function rotateGif(element) {
+            element.style.transform = "translate(5px, 5px)";
+            element.style.transform = "rotate(180deg)"
+        }
+
+
+        function rotateBack(element) {
+            element.style.transform = "translate(-5px, -5px)";
+            element.style.transform = "rotate(0deg)"
+        }
+    </script>
+
+</body>
+
+</html>

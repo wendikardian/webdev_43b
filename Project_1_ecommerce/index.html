@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
     <title>Let's code !</title>
 </head>
 
@@ -18,16 +19,16 @@ this is my website for practice
         </div>
 
         <nav>
-            <a href="#home" class="nav-item">Home</a>
-            <a href="#product" class="nav-item">Price</a>
-            <a href="#about" class="nav-item">About</a>
+            <a href="#home" class="nav-item"> <i class="fa-solid fa-house"></i> Home</a>
+            <a href="#product" class="nav-item"> <i class="fa-solid fa-dollar-sign"></i>Price</a>
+            <a href="#about" class="nav-item"><i class="fa-solid fa-address-card"></i>About</a>
         </nav>
     </header>
 
     <main>
         <section id="home">
             <div class="jumbotron">
-                <h1>Hello there, this is my first website</h1>
+                <h1 class="oswald">Hello there, this is my first website</h1>
                 <h2>I love <b>HTML</b> </h2>
                 <img src="assets/coding.jpg" alt="" class="img-jumbotron">
                 <p>
@@ -46,7 +47,7 @@ this is my website for practice
 
         <section id="product">
             <div class="container-products">
-                <h2>Our Products</h2>
+                <h2 class="oswald">Our Products</h2>
                 <div class="products">
                     <div class="product">
                         <img src="assets/cpp.png" alt="" class="img-product">
@@ -94,7 +95,7 @@ this is my website for practice
             </div>
     
             <div class="container-products">
-                <h2>Pricing Table</h2>
+                <h2 class="oswald">Pricing Table</h2>
                 <table>
                     <tr>
                         <th rowspan="2">No</th>
@@ -277,7 +278,7 @@ this is my website for practice
         <section id="about">
                 <div class="about">
                   <div>
-                    <h2 class="about"> About Us </h2> 
+                    <h2 class="about oswald"> About Us </h2> 
                     <p class="about"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dignissimos nesciunt assumenda optio odit magnam nulla amet porro et necessitatibus dolor, doloribus aut excepturi aspernatur possimus incidunt ullam temporibus repudiandae? </p>
                     <p>Kunjungi website official : <a href="https://timedooracademy.com/id/" target="_blank" 
                         class="hyperlink_about"
@@ -298,9 +299,23 @@ this is my website for practice
     </main>
 
     <footer>
-        <p>
-            &copy; 2024 Wendi Kardian
-        </p>
+        <div class="center-footer">
+          <div class="main-footer">
+            <div class="left-footer"> 
+              <h3 class="info-left"> <b>Address</b></h3>
+              <p class="info-left"> Tukad Yeh AyaStreet No.45, Renon,Denpasar</p>
+            </div>
+            <div class="right-footer">
+              <h3 class="info-right"> <b>Contacts</b></h3>
+              <p class="info-right">Phone:087876667564</p>
+              <p class="info-right">Instagram : @floristshop</p>
+            </div>
+          </div>
+                    
+          <div class="main-footer">
+            <p class="info-center">CopyrightN&copy; 2021 Designed by Florist Shop</p>
+          </div>
+        </div>
     </footer>
 
 </body>
