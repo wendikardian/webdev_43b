@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Web</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <header>
+    <div class="header">
+      <div class="title">
+        <img src="https://cdn-icons-png.flaticon.com/512/8832/8832880.png" alt="judul" width="40" height="40"
+          class="img-nav">
+        <h2 class="header-title-h2">Wen's Blog</h2>
+      </div>
+      <nav>
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
     <section id="jumbotron">
-        <div class="jumbotron">
-          <h1 class="jumbotron-title">Dapatkan Tips Programming Disini!</h1>
-          <div class="header-flex">
-            <div>
-              <h2 class="jumbotron-text">Baru di dunia Programming? <br> Belajar lewat pengembangan <span style="color: #f4a261;">Game dan Web</span> sederhana!</h2>
-              <div class="mini-text-flex">
-                <p class="mini-text">Belajar programming dasar disini</p>
-                <button id="icon-up" onclick="changeText()"> <i class="far fa-hand-point-up"></i></button>
-                <button id="icon-down" class="icon-down"> 
-                  <i class="far fa-hand-point-down"></i>
-                </button> 
-              </div>                          
-            </div>
-      
-            <div>
-              <img class="jumbotron-img" src="https://cobee-the-junior-programmer.netlify.app/assets/img-header2.png" alt="" width="auto" height="300">
+      <div class="jumbotron">
+        <h1 class="jumbotron-title">Dapatkan Tips Programming Disini!</h1>
+        <div class="header-flex">
+          <div>
+            <h2 class="jumbotron-text">Baru di dunia Programming? <br> Belajar lewat pengembangan <span
+                style="color: #f4a261;">Game dan Web</span> sederhana!</h2>
+            <div class="mini-text-flex">
+              <p class="mini-text">Belajar programming dasar disini</p>
+              <button id="icon-up" onclick="changeText()"> <i class="far fa-hand-point-up"></i></button>
+              <button id="icon-down" class="icon-down">
+                <i class="far fa-hand-point-down"></i>
+              </button>
             </div>
           </div>
-        </div>
-      </section>
 
-    <script src="script.js"></script>
+          <div>
+            <img class="jumbotron-img" src="https://cobee-the-junior-programmer.netlify.app/assets/img-header2.png"
+              alt="" width="auto" height="300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="video">
+        <h2>Example of Video</h2>
+        <video src="assets/example_video.mp4" controls></video>
+      </div>
+
+      <div class="audio">
+        <h2>Example of Audio</h2>
+        <audio src="assets/sample_audio.mp3" controls></audio>
+      </div>
+    </section>
+
+
+    <section id="content">
+      <div>
+        <article id="my-project"> 
+          <h3 class="article-title">My Project</h3>
+          <div class="project-container">
+            <div class="project">
+              <img src="https://ashallendesign.ams3.cdn.digitaloceanspaces.com/public/blog/72/13-placeholder-avatar-and-image-websites.png" alt="" width="300px" height="210px">
+              <h4 class="project-title">Desert Rally</h4>
+              <p class="project-description">Game Desert Rally uses Scratch platform</p>
+            </div>
+            <div class="project">
+              <img src="https://ashallendesign.ams3.cdn.digitaloceanspaces.com/public/blog/72/13-placeholder-avatar-and-image-websites.png" alt="" width="300px" height="210px">
+              <h4 class="project-title">Memory Game</h4>
+              <p class="project-description">Game Memory Game uses Phaser platform</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div>
+        <article id="video">
+          <div class="item-video">
+            <h3 class="article-title">What is Coding?</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CgkZ7MvWUAA?si=Ptwa6w5hw-JbjNss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            <h3 class="article-title">Coding is Not Difficult!</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SqcY0GlETPk?si=l42ZNMH5gWPN8Kf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </article>
+    
+        <div class="content">
+          <article id="maps" >
+            <div class="maps">
+              <h2>Visit my company</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15776.416263767285!2d115.2404545!3d-8.6816532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1724932533072!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </article>
+      </div>
+      
+    </section>
+ 
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
