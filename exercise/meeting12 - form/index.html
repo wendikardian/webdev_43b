@@ -8,36 +8,74 @@
 
 </head>
 <body>
-    <h1>Form Practice</h1>
-    <form action="action.html"  target="_blank" method="post" autocomplete="off" novalidate  >
-        <div class="input-group">
-            <label for="fullname">Full Name : </label>
-            <input id="fullname" type="text" placeholder="Full name" name="fullname" required >
-        </div>
-        <div class="input-group">
-            <label for="city">City : </label>
-            <input type="text" id="city" placeholder="city" name="city">
-        </div>
-        <div class="input-group">
-            <label for="age">Age : </label>
-            <input type="number" id="age" placeholder="age" name="age">
-        </div>
-        <div class="input-group">
-            <label for="address">Address : </label>
-            <textarea name="address" id="address"></textarea>
-        </div>
-        <div class="input-group">
-            <label for="country">Country : </label>
-            <select name="country" id="country">
-                <option value="Vietnam">Vietnam</option>
-                <option value="USA">USA</option>
-                <option value="Japan">Japan</option>
-                <option value="Korea">Korea</option>
-                <option value="Indonesia">Indonesia</option>
-            </select>
-        </div>
-        <!-- <button type="submit">Submit data</button> -->
-         <input type="submit" value="Submit data">
-    </form>
+    <section class="form-container">
+        <h1>Form Practice</h1>
+        <form action="action.html"  target="_blank" method="post" autocomplete="off"   >
+            <div class="input-group">
+                <label for="fullname">Full Name : </label>
+                <input id="fullname" type="text" placeholder="Full name" name="fullname" required >
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Insert your password here" required  >
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Insert your email" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="input-group">
+                <label for="city">City : </label>
+                <input type="text" id="city" placeholder="city" name="city">
+            </div>
+            <div class="input-group">
+                <label for="age">Age : </label>
+                <input type="number" id="age" placeholder="age" name="age">
+            </div>
+            <div class="input-group">
+                <label for="address">Address : </label><br>
+                <textarea name="address" id="address"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="country">Country : </label>
+                <select name="country" id="country">
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Indonesia">Indonesia</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="programming_language">Programming Language</label><br>
+                <input type="checkbox" name="programming_language" value="PHP">PHP
+                <input type="checkbox" name="programming_language" value="Java">Java
+                <input type="checkbox" name="programming_language" value="Python">Python
+                <input type="checkbox" name="programming_language" value="C#">C#
+            </div>
+
+            <div class="input-group">
+                <label for="grade">Grade</label><br>
+                <!-- radio for grade -->
+                <input type="radio" name="grade" value="kids">Kids
+                <input type="radio" name="grade" value="teen">Teen
+                <input type="radio" name="grade" value="adult">Adult
+            </div>
+
+
+            <div class="input-group">
+                <label for="form-file">Upload file</label>
+                <input type="file" name="form-file" id="form-file">
+            </div>
+
+            <!-- <button type="submit">Submit data</button> -->
+             <input type="submit" value="Submit data">
+        </form>
+    </section>
+    
 </body>
 </html>

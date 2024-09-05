@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: bisque;
+  padding: 30px;
+}
+
+.input-group {
+  margin: 15px;
+}
+
+label {
+  width: 100px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-color: aqua;
+  border-radius: 8px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: 50px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: inline;
+}
+
+
+input[type="file"] { 
+    /* create unique and beautiful styles for input file */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+/* add some animation */
+input[type="file"]:hover {
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
