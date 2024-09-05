@@ -13,7 +13,7 @@
         <form action="action.html"  target="_blank" method="post" autocomplete="off"   >
             <div class="input-group">
                 <label for="fullname">Full Name : </label>
-                <input id="fullname" type="text" placeholder="Full name" name="fullname" required >
+                <input id="fullname" type="text" placeholder="Full name" name="fullname" value="Wendi Kardian" disabled  required >
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
@@ -21,7 +21,7 @@
             </div>
             <div class="input-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Insert your email" required>
+                <input type="email" id="email" name="email" placeholder="Insert your email" required autofocus >
             </div>
             <div class="input-group">
                 <label for="dob">Date of birth</label>
@@ -33,7 +33,7 @@
             </div>
             <div class="input-group">
                 <label for="age">Age : </label>
-                <input type="number" id="age" placeholder="age" name="age">
+                <input type="number" id="age" placeholder="age" name="age" min="10" max="24" >
             </div>
             <div class="input-group">
                 <label for="address">Address : </label><br>
@@ -69,7 +69,7 @@
 
             <div class="input-group">
                 <label for="form-file">Upload file</label>
-                <input type="file" name="form-file" id="form-file">
+                <input type="file" name="form-file" id="form-file" multiple >
             </div>
 
             <!-- <button type="submit">Submit data</button> -->
